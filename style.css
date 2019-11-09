@@ -1,13 +1,16 @@
+/*? CLASSES */
 .navbar{
   height:50px;
   position:fixed;
   top:0;
   width:100vw;
   background-color: chocolate;
+  display: flex;
+  justify-content: space-between;
 }
 .mainpage{
   background-color: crimson;
-  top:30px;
+  margin-top:50px;
 }
 .workpage{
   background-color: darkgreen;
@@ -16,11 +19,64 @@
   background-color: blueviolet;
 }
 .page{
+  display:flex;
+  align-items: center;
+  justify-content: center;
   height:100vh;
 }
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-github {
+  background: whitesmoke;
+  color: black;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.links{
+  text-align: center;
+  height: 100%;
+  transform: translateY(25%);
+}
+.links a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.aboutpage{
+  background-color: turquoise;
+}
+.contactpage{
+  background-color: yellow;
+}
+/*? TAGS */
 body{
   min-height:100vh;
+  margin:0;
+  padding: 0;
 }
 html{
   scroll-behavior: smooth;
+}
+.navbar div{
+  display:inline-block;
+  margin: 0 10px;
 }
