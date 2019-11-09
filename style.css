@@ -1,0 +1,26 @@
+.navbar{
+  height:50px;
+  position:fixed;
+  top:0;
+  width:100vw;
+  background-color: chocolate;
+}
+.mainpage{
+  background-color: crimson;
+  top:30px;
+}
+.workpage{
+  background-color: darkgreen;
+}
+.skillspage{
+  background-color: blueviolet;
+}
+.page{
+  height:100vh;
+}
+body{
+  min-height:100vh;
+}
+html{
+  scroll-behavior: smooth;
+}
