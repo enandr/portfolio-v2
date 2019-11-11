@@ -4,25 +4,35 @@
   position:fixed;
   top:0;
   width:100vw;
-  background-color: chocolate;
+  background-color: black;
   display: flex;
   justify-content: space-between;
 }
+.projectcontainer{
+  background-color: burlywood;
+  height:100%;
+  width:90%;
+  margin: 10%;
+  flex-direction: column;
+}
 .mainpage{
-  background-color: crimson;
+  background-color: black;
   margin-top:50px;
 }
 .workpage{
   background-color: darkgreen;
+  background-color: black;
 }
 .skillspage{
   background-color: blueviolet;
+  background-color: black;
 }
 .page{
   display:flex;
   align-items: center;
   justify-content: center;
   height:100vh;
+  scroll-snap-align: center;
 }
 .fa {
   padding: 10px;
@@ -63,18 +73,33 @@
 }
 .aboutpage{
   background-color: turquoise;
+  background-color: black;
 }
 .contactpage{
   background-color: yellow;
+  background-color: black;
+}
+.mainpage,.workpage,.skillspage,.aboutpage,.contactpage{
+  flex-direction: column;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+.red{
+  color: rgb(242, 0, 0);
+  font-weight: bold;
+  font-size:1.1em;
 }
 /*? TAGS */
 body{
   min-height:100vh;
   margin:0;
   padding: 0;
+  background-color: black;
+  overflow: scroll;
 }
 html{
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 .navbar div{
   display:inline-block;
